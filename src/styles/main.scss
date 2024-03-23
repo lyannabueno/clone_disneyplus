@@ -43,15 +43,27 @@ body { /* não se aplcia a inputs e botões */
 }
 
 .text--big {
-    @include text(18px)
+    @include text(18px);
+
+    @media (max-width: 768px) {
+        @include text(15px);
+    }
 }
 
 .text {
-    @include text
+    @include text;
+
+    @media (max-width: 768px) {
+        @include text(14px);
+    }
 }
 
 .text--small {
-    @include text(12px)
+    @include text(12px);
+
+    @media (max-width: 768px) {
+        @include text(11px);
+    }
 }
 
 .text--medium {
@@ -59,15 +71,27 @@ body { /* não se aplcia a inputs e botões */
 }
 
 .title--big {
-    @include title(44px)
+    @include title(44px);
+
+    @media (max-width: 768px) {
+        @include title(26px);
+    }
 }
 
 .title {
-    @include title
+    @include title;
+
+    @media (max-width: 768px) {
+        @include title(24px);
+    }
 }
 
 .title--small  {
-    @include title(28px)
+    @include title(28px);
+
+    @media (max-width: 768px) {
+        @include title(22px);
+    }
 }
 
 .button {
@@ -122,6 +146,10 @@ body { /* não se aplcia a inputs e botões */
     grid-template-columns:  1fr 1fr;
     align-items: center;
 
+    @media (max-width: 768px) {
+        display: block;
+    }
+
     img {
         max-width: 100%;
     }
@@ -151,6 +179,12 @@ body { /* não se aplcia a inputs e botões */
             display: flex;
             flex-direction: column;
             justify-content: center;
+
+            @media (max-width: 768px) {
+                position: relative;
+                left: 0;
+                width: 100%;
+            }
         }
     }
 }
