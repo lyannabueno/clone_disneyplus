@@ -12,7 +12,7 @@ Este projeto é um clone da interface do DisneyPlus, uma plataforma de streaming
 ## Tecnologias Utilizadas 📚
 
 - **HTML5:** Estrutura da página web.
-- **SASS:**  Utilizado para escrever estilos de forma eficiente e modular, juntamente com a metodologia BEM (Block Element Modifier), que organiza o HTML e CSS de maneira semântica e consistente, dividindo elementos em blocos, elementos e modificadores para facilitar a manutenção e colaboração no desenvolvimento.
+- **SCSS:**  Utilizado para escrever estilos de forma eficiente e modular, juntamente com a metodologia BEM (Block Element Modifier), que organiza o HTML e CSS de maneira semântica e consistente, dividindo elementos em blocos, elementos e modificadores para facilitar a manutenção e colaboração no desenvolvimento.
 - **JavaScript:** Adição de interatividade e dinamismo à interface, tornando-a mais responsiva e amigável ao usuário.
 - **Gulp:** Automatiza o workflow de desenvolvimento, incluindo tarefas como compilação de SASS, minificação de arquivos e otimização de imagens.
 
