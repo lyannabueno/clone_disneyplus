@@ -22,20 +22,28 @@
                 cursor: pointer;
                 position: relative;
 
+                span {
+                    display: flex;
+
+                    @media (max-width: 768px) {
+                        padding-right: 32px;
+                    }
+                }
+
                 &::after {
                     content: '+';
                     position: absolute;
-                    top: 0;
+                    top: 50%;
                     right: 24px;
-                    height: 100%;
-                    align-items: center;
                     font-size: 40px;
+                    transform: translateY(-50%);
                 }
             }
 
             &--is-open {
                 .faq__questions__item__question::after {
                     content: '_';
+                    transform: translateY(-75%);
                 }
 
                 .faq__questions__item__answer {
