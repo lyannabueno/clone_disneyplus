@@ -25,6 +25,10 @@
                 span {
                     display: flex;
 
+                    @media (max-width: 1024px) {
+                        font-size: 16px;
+                    }
+
                     @media (max-width: 768px) {
                         padding-right: 32px;
                     }

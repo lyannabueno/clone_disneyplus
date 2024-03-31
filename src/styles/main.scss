@@ -48,6 +48,10 @@ body { /* não se aplcia a inputs e botões */
     @media (max-width: 768px) {
         @include text(15px);
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include text(16px);
+    }
 }
 
 .text {
@@ -64,6 +68,10 @@ body { /* não se aplcia a inputs e botões */
     @media (max-width: 768px) {
         @include text(11px);
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include text(12px);
+    }
 }
 
 .text--medium {
@@ -76,6 +84,10 @@ body { /* não se aplcia a inputs e botões */
     @media (max-width: 768px) {
         @include title(26px);
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include title(32px);
+    }
 }
 
 .title {
@@ -84,6 +96,10 @@ body { /* não se aplcia a inputs e botões */
     @media (max-width: 768px) {
         @include title(24px);
     }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include title(32px);
+    }
 }
 
 .title--small  {
@@ -91,6 +107,10 @@ body { /* não se aplcia a inputs e botões */
 
     @media (max-width: 768px) {
         @include title(22px);
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        @include title(32px);
     }
 }
 
@@ -157,8 +177,16 @@ body { /* não se aplcia a inputs e botões */
     &__text_container {
         padding: 0 2vw;
 
+        @media (max-width: 1024px) {
+            text-align: center;
+        }
+
         h2 {
             margin-bottom: 24px;
+
+            @media (max-width: 1024px) {
+                padding-top: 20px;
+            }
         }
     }
 

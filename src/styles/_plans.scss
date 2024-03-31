@@ -14,6 +14,10 @@
             display: block;
         }
 
+        @media (min-width: 768px) and (max-width: 1024px) {
+            display: grid;
+        }
+
         .button {
             margin-top: 24px;
         }
@@ -23,6 +27,10 @@
             padding: 60px 44px 44px;
             max-width: 380px;
             width: 100%;
+
+            @media (max-width: 768px) {
+                padding: 0px 44px 60px 44px;
+            }
 
             &:nth-child(2) { // faz alteração na posição do item selecionado (se a alteração for na última posição, pode usasr o ':last-child')
                 background-image: url(../images/fundo_combo_plus.png);

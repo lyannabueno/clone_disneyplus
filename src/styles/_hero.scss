@@ -24,6 +24,12 @@
     &__content {
         max-width: 640px;
 
+        @media (min-width: 768px) and (max-width: 1024px) {
+            max-width: 500px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
         &__branding {
             max-width: 320px;
             margin: 0 auto 38px;
